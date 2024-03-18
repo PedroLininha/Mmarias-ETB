@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css"/>
+    <title>Sublimiçoes e Tecidos | Register</title>
+</head>
+<body>
+    <header>
+        <h1>Crie uma nova conta</h1>
+        <span>Voce está registrado ? <a class="login" href="./login.html">Login</a></span>
+    </header>
+    <main>
+        <form id="form-list" method="post" action="../../index.html">
+            <div class="form-register">
+                <div>
+                    <label>NOME</label>
+                    <input type="text" placeholder="Nome" class="required" oninput="nameValidate()"/>
+                    <span class="spanRequired">Nome deve ter 3 caracteres</span>
+                </div>
+
+                <div>
+                    <label>EMAIL</label>
+                    <input type="email" placeholder="Email" class="required" oninput="emailValidate()"/>
+                    <span class="spanRequired">Digite um E-mail valido</span>
+                </div>
+
+                <div>
+                    <label>SENHA</label>
+                    <input type="password" placeholder="Senha" class="required" oninput="validatePassword()"/>
+                    <span class="spanRequired">Ter no minimo 8 caracteres</span>
+                </div>
+
+                <div>
+                    <label>CONFIRMAR SENHA</label>
+                    <input type="password" placeholder="Confirmar Senha" class="required" oninput="comparePassword()"/>
+                    <span class="spanRequired">Senha precisam ser iguais</span>
+                </div>
+                <input type="submit" value="Sign in" id="InputSubmit"/>
+            </div>
+        </form>
+    </main>
+<script src="../js/registerValidate.js"></script>
+</body>
+</html>

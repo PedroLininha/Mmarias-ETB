@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css"/>
+    <title>Mmarias | Login</title>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <span>Não está registrado no nosso site ? <a class="login" href="./register.html">Registrar-se</a></span>
+    </header>
+    <main>
+        <form  method="post" id="list-form">
+            <div class="form-list">
+                <div>
+                    <label>NOME</label>
+                    <input type="text" placeholder="Nome" class="validate" oninput="validateName()"/>
+                    <span class="span-validate">Usuario não existe</span>
+                </div>
+
+                <div>
+                    <label>SENHA</label>
+                    <input type="password" placeholder="Senha" class="validate" oninput="validatePassword()"/>
+                    <span class="span-validate">Senha não compativel</span>
+                </div>
+
+                <input type="submit" value="Log in"/>
+            </div>
+        </form>
+    </main>
+<script src="../js/loginValidate.js"></script>
+</body>
+</html>
