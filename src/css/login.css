@@ -88,5 +88,15 @@ body form .form-list input[type=submit]:hover {
     color: black;
     font-weight: bold;
 }
+body > main > .recupe-senha  {
+    margin-top: 0.8rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+body > main > .recupe-senha > span > a {
+    color: blueviolet;
+    text-decoration: none;
+}
 
 
