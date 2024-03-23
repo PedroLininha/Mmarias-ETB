@@ -34,6 +34,18 @@ body form {
     font-weight: bold;
     box-shadow: 0px 0px 53px 17px rgba(209,202,209,0.56);
 }
+body form .icon-back {
+    display: flex;
+    align-items: flex-start;
+}
+body form .icon-back a {
+    text-decoration: none;
+    color: black;
+}
+body form .icon-back a i {
+    font-size: 18px;
+}
+
 body form .form-register {
     display: flex;
     flex-direction: column;
